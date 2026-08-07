@@ -1,4 +1,31 @@
 {
   "version": 1,
-  "tests": []
+  "imagesBaseUrl": "https://ekisymi-content.vercel.app/ekisymi/images/",
+  "tests": [
+    {
+      "id": "rider_saddle_symmetry",
+      "enabled": true,
+      "order": 1,
+      "subject": "rider",
+
+      "title": "Symetria siodła",
+      "description": "Analiza symetrii przechylania siodła w lewo i w prawo.",
+
+      "image": "saddle.png",
+
+      "algorithm": "singleSensorSymmetry",
+      "sensorCount": 1,
+      "axis": "pitch",
+
+      "calibration": {
+        "maxRawAngle": 3.0
+      },
+
+      "mounting": {
+        "title": "Montaż czujnika",
+        "description": "Zamocuj czujnik centralnie na siodle.",
+        "image": "saddle.png"
+      }
+    }
+  ]
 }
